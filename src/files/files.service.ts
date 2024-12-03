@@ -49,7 +49,7 @@ export class FilesService {
 
             const bucketParams = {
                 Bucket: this.configService.get('AWS_BUCKET_NAME'),
-                Key: '3ZeroClub/' + filename,
+                Key: 'example/' + filename,
                 Body: file.buffer,
                 ContentEncoding: 'base64',
                 ContentType: file.mimetype,
@@ -95,7 +95,7 @@ export class FilesService {
 
             const bucketParams = {
                 Bucket: this.configService.get('AWS_BUCKET_NAME'),
-                Key: '3ZeroClub/' + filename,
+                Key: 'example/' + filename,
                 Body: file.buffer,
                 ContentEncoding: 'base64',
                 ContentType: file.mimetype,
